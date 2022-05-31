@@ -4,3 +4,75 @@
     padding: 0;
     text-decoration: none;
 }
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-row: span 2;
+    display: grid;
+    gap: 2rem;
+    padding: 1rem 3rem 1rem 1rem;
+}
+
+.sidebar > div {
+    display: grid;
+}
+
+.sidebar > div > a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+/* Top Header */
+.user-menu {
+    grid-column: 2;
+    display: grid;
+    grid-template-areas: 
+        "search search profile"
+        " user   user  buttons";
+}
+
+.search-bar {
+    grid-area: search;
+}
+
+.user-profile {
+    grid-area: profile;
+}
+
+.user-welcome {
+    grid-area: user;
+}
+
+.buttons-menu {
+    grid-area: buttons;
+}
+
+/* Content Section */
+.content {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content auto;
+}
+
+.projects {
+    display: grid;
+}
+
+.announcements {
+    grid-column: 2;
+}
+
+.trending {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+}
