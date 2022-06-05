@@ -29,8 +29,22 @@ body {
     gap: 1rem;
 }
 
+.sidebar > .title {
+    margin-left: -0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    height: 3rem;
+}
+
+.sidebar > .title > svg {
+    width: 3rem;
+    height: 3rem;
+}
+
 /* Top Header */
 .user-menu {
+    padding: 1rem;
     grid-column: 2;
     display: grid;
     grid-template-areas: 
