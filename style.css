@@ -44,9 +44,10 @@ body {
 
 /* Top Header */
 .user-menu {
-    padding: 1rem;
-    grid-column: 2;
+    padding: 1rem 2rem;
     display: grid;
+    gap: 2rem;
+    grid-column: 2;
     grid-template-areas: 
         "search search profile"
         " user   user  buttons";
@@ -54,18 +55,48 @@ body {
 
 .search-bar {
     grid-area: search;
+    display: flex;
+    align-items: center;
 }
 
 .user-profile {
     grid-area: profile;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 1rem;
 }
 
 .user-welcome {
     grid-area: user;
+    display: flex;
+    align-items: center;
+}
+
+.user-welcome > img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.user-profile > img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
 }
 
 .buttons-menu {
     grid-area: buttons;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons-menu > button {
+    border-radius: 25%;
+    height: min-content;
+    padding: 0.5rem 1.5rem;
 }
 
 /* Content Section */
