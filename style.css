@@ -3,20 +3,22 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    border: 1px solid red;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root.dark {
-
+    --main-color: #7f1d1d;
 }
 
 :root.light {
-
+    --main-color: blue;
 }
 
 body {
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-template-rows: min-content 1fr;
 }
 
 /* Sidebar */
@@ -26,6 +28,7 @@ body {
     grid-auto-rows: max-content;
     gap: 2rem;
     padding: 1rem 3rem 1rem 1rem;
+    min-height: 100vh;
 }
 
 .sidebar > div {
@@ -62,6 +65,7 @@ body {
     grid-template-areas: 
         "search search profile"
         " user   user  buttons";
+    grid-auto-rows: max-content;
 }
 
 .search-bar {
