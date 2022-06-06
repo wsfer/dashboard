@@ -109,19 +109,23 @@ body {
     grid-column: 2;
     grid-row: 2;
     display: grid;
+    grid-template-areas: 
+        "content informations"
+        "content       .     ";
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: max-content 1fr;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .projects {
-    display: grid;
+    grid-area: content;
 }
 
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 200px;
-    grid-row: span 2;
+    gap: 1rem;
 }
 
 .container {
@@ -145,12 +149,6 @@ body {
     grid-column: span 2;
 }
 
-.announcements {
-    grid-column: 2;
-}
-
-.trending {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: start;
+.informations {
+    grid-area: informations;
 }
