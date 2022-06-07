@@ -34,12 +34,12 @@ body {
     min-height: 100vh;
 }
 
-.sidebar > div {
+.sidebar > section {
     display: grid;
     gap: 0.5rem;
 }
 
-.sidebar > div > a {
+.sidebar > section > a {
     display: flex;
     align-items: center;
     justify-content: start;
