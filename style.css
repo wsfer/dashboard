@@ -9,10 +9,13 @@
 
 :root.dark {
     --first-color: #111827;
-    --second-color: #374151;
-    --third-color: #A1A1AA;
+    --second-color: #A1A1AA;
+    --third-color: #374151;
     --fourth-color: red;
+    --sidebar-color: white;
     --font-color: #fed7aa;
+    --title-color: black;
+    --font-color: #ebcbcb;
 }
 
 :root.light {
@@ -46,6 +49,8 @@ body {
     gap: 2rem;
     padding: 1rem 3rem 1rem 1rem;
     min-height: 100vh;
+    /* this z-index will hide blur effect from others elements */
+    z-index: 2;
 }
 
 .sidebar a {
@@ -81,6 +86,9 @@ body {
 .user-menu {
     background-color: var(--third-color);
     color: var(--title-color);
+    box-shadow: 2px 2px 8px #636363;
+    /* this z-index is to fix box-shadow display */
+    z-index: 1;
     padding: 1rem 2rem;
     display: grid;
     gap: 2rem;
@@ -102,7 +110,7 @@ body {
     background-color: var(--second-color);
     border-radius: 1rem;
     border: none;
-    padding: 0.3rem;
+    padding: 0.3rem 1rem;
 }
 
 .user-profile {
@@ -179,6 +187,7 @@ body {
 .container {
     background-color: var(--third-color);
     color: var(--font-color);
+    box-shadow: 2px 2px 8px #636363;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 0.5rem;
@@ -216,6 +225,7 @@ main h2 {
 }
 
 .announcements-content, .trending-content {
+    box-shadow: 2px 2px 8px #636363;
     display: grid;
     grid-auto-rows: 1fr;
     padding: 1rem 1rem;
@@ -250,6 +260,7 @@ main h2 {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1rem;
+    align-items: center;
 }
 
 .trend-inf {
