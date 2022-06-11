@@ -8,12 +8,12 @@
 }
 
 :root.dark {
-    --main-color: #7f1d1d;
+    --main-color: #081333;
     --font-color: #fed7aa;
 }
 
 :root.light {
-    --main-color: blue;
+    --main-color: #3769b4;
 }
 
 body {

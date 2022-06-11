@@ -1,0 +1,2 @@
+#081333 - dark background
+#3769B4 - light background
