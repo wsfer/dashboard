@@ -1,3 +1,4 @@
+// Dark/light theme script.
 const root = document.documentElement;
 root.className = 'light';
 
@@ -17,5 +18,18 @@ function changeTheme () {
         root.className = 'dark';
         moon.style.display = 'block';
         sun.style.display = 'none';
+    }
+}
+
+// ...This is not google
+const searchBtn = document.querySelector('#search');
+searchBtn.addEventListener('click', thisIsNotGoogle);
+
+const searchBar = document.querySelector('#search-bar');
+
+function thisIsNotGoogle () {
+    if (searchBar.value !== '') {
+        searchBar.value = '';
+        alert('This is not google!');
     }
 }
