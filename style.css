@@ -286,3 +286,41 @@ main h2 {
 .trend-inf {
     color: var(--font-color);
 }
+
+/* COOKIES */
+.cookies {
+    background-color: var(--first-color);
+    box-shadow: 2px 2px 8px var(--first-color);
+    color: var(--title-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+}
+
+.cookies > div {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: end;
+
+}
+
+.agree, .refuse {
+    padding: 0.5rem;
+    color: var(--title-color);
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0 1rem;
+}
+
+.agree {
+    background-color: #1ac23f;
+}
+
+.refuse {
+    background-color: #be1313;
+}
+
+.hidden {
+    display: none;
+}
