@@ -197,6 +197,7 @@ body {
 }
 
 .container {
+    position: relative;
     background-color: var(--third-color);
     color: var(--font-color);
     box-shadow: 2px 2px 8px #636363;
@@ -254,6 +255,7 @@ main h2 {
 }
 
 .announcements-content > div, .trending-content > div {
+    cursor: pointer;
     padding: 1rem 0.5rem;
 }
 
@@ -285,10 +287,6 @@ main h2 {
 
 .trend-inf {
     color: var(--font-color);
-}
-
-#virus {
-    cursor: pointer;
 }
 
 /* COOKIES */
@@ -328,4 +326,21 @@ main h2 {
 
 .hidden {
     display: none;
+}
+
+/* Below here are some hover effects */
+
+.agree:hover, .refuse:hover, .buttons-menu > button:hover {
+    background-color: goldenrod;
+}
+
+.trending-content > div:hover,
+.announcements-content > div:hover {
+    background-color: goldenrod;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 3px var(--font-color);
+}
+
+.container:hover {
+    bottom: 3px;
 }
