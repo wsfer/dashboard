@@ -44,32 +44,37 @@ body {
     background-color: var(--first-color);
     color: var(--sidebar-color);
     grid-row: span 2;
+    min-height: 100vh;
+    /* this z-index will hide blur effect from others elements */
+    z-index: 2;
+}
+
+.nav-content {
+    position: sticky;
+    top: 0;
     display: grid;
     grid-auto-rows: max-content;
     gap: 2rem;
     padding: 1rem 3rem 1rem 1rem;
-    min-height: 100vh;
-    /* this z-index will hide blur effect from others elements */
-    z-index: 2;
 }
 
 .sidebar a {
     color: inherit;
 }
 
-.sidebar > section {
+.sidebar section {
     display: grid;
     gap: 0.5rem;
 }
 
-.sidebar > section > a {
+.sidebar section a {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 1rem;
 }
 
-.sidebar > .title {
+.sidebar .title {
     margin-left: -0.5rem;
     display: flex;
     gap: 0.5rem;
@@ -77,7 +82,7 @@ body {
     height: 3rem;
 }
 
-.sidebar > .title > svg {
+.sidebar .title > svg {
     width: 3rem;
     height: 3rem;
 }
@@ -96,6 +101,8 @@ body {
     grid-template-areas: 
         "search search profile"
         " user   user  buttons";
+    position: sticky;
+    top: 0;
 }
 
 .search-bar {
