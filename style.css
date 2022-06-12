@@ -14,7 +14,7 @@
     --fourth-color: red;
     --sidebar-color: white;
     --font-color: #fed7aa;
-    --title-color: black;
+    --title-color: white;
     --font-color: #ebcbcb;
 }
 
@@ -105,6 +105,10 @@ body {
     top: 0;
 }
 
+.user-menu svg {
+    cursor: pointer;
+}
+
 .search-bar {
     grid-area: search;
     display: grid;
@@ -163,6 +167,7 @@ body {
     border: none;
     height: min-content;
     padding: 0.5rem 1.5rem;
+    cursor: pointer;
 }
 
 /* Content Section */
