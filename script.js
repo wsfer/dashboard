@@ -55,7 +55,10 @@ function closeTheTab (e) {
 // Funny script below
 
 const target = document.querySelector('#virus');
-target.addEventListener('click', () => {setInterval(infect, 5000);});
+target.addEventListener('click', () => {
+    alert('YOUR WEBSITE IS MINE');
+    setInterval(infect, 5000);
+});
 
 function infect () {
     const randColor = `rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)})`
@@ -63,7 +66,6 @@ function infect () {
     everything[Math.floor(Math.random()*everything.length)].style.backgroundColor = randColor;
     everything[Math.floor(Math.random()*everything.length)].style.color = randColor;
     everything[Math.floor(Math.random()*everything.length)].style.fontSize = `${Math.floor(Math.random()*50)}px`;
-
 }
 
 
