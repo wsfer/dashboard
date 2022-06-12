@@ -33,3 +33,21 @@ function thisIsNotGoogle () {
         alert('This is not google!');
     }
 }
+
+// Script for the cookies tab.
+const agree = document.querySelector('.not-hidden');
+agree.addEventListener('click', closeTheTab);
+const refuse = document.querySelector('.refuse');
+refuse.addEventListener('click', youHaveNoOption);
+const agreeHidden = document.querySelector('.hidden');
+agreeHidden.addEventListener('click', closeTheTab);
+const tab = document.querySelector('.cookies');
+
+function youHaveNoOption () {
+    refuse.style.display = "none";
+    agreeHidden.style.display = "block";
+}
+
+function closeTheTab (e) {
+    tab.style.display = "none";
+}
