@@ -1,4 +1,4 @@
-# Project: Admin Dashboard
+# [Project: Admin Dashboard](https://wsfer.github.io/dashboard/)
 This is an **Intermediate HTML and CSS** project from [The Odin Project](https://www.theodinproject.com) mainly focused on using grid layout
 
 ### Original Layout:
